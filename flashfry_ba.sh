@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Arrays for chromosomes and genome IDs
-chromosomes=("chr1" "chr2" )  # Add or update chromosomes as needed
-genomes=("HG00142" "HG00178" "HG00237" "HG01521" "HG03129" "NA19175" "NA19462")  # Add or update genome IDs as needed
+chromosomes=("chr1" "chr2" )  
+genomes=("HG00142" "HG00178" "HG00237" "HG01521" "HG03129" "NA19175" "NA19462")  
 
 # Create output folder 
 mkdir -p output
