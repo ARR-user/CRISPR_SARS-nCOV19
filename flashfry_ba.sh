@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Arrays for chromosomes and genome IDs
+#---------------------------- Arrays for chromosomes and genome IDs---------------------------------------------
 chromosomes=("chr1" "chr2" )  
 genomes=("HG00142" "HG00178" "HG00237" "HG01521" "HG03129" "NA19175" "NA19462")  
 
@@ -47,3 +47,4 @@ for chr in "${chromosomes[@]}"; do
 done
 
 echo "All tasks completed."
+#  output text file in respective folders 
