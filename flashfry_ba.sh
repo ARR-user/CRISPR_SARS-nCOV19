@@ -22,7 +22,7 @@ for chr in "${chromosomes[@]}"; do
       --database "$database" \
       --reference "$reference" \
       --enzyme spcas9ngg
-    echo "fin-1"  
+    echo "Index completed"  
 
     # Step 2: Discover
     echo "Discovering targets for $chr and $genome..."
@@ -31,7 +31,7 @@ for chr in "${chromosomes[@]}"; do
       --database "$database" \
       --fasta LPL_first_exon_HPSE_NC_000004.12.fasta \
       --output "output/${genome}_${chr}_LPL.output"
-     echo "fin-2" 
+     echo "Discovery completed" 
 
     # Step 3: Score
     echo "Scoring targets for $chr and $genome..."
@@ -41,7 +41,7 @@ for chr in "${chromosomes[@]}"; do
       --output "output/${genome}_${chr}_LPL.output.scored" \
       --scoringMetrics doench2014ontarget,doench2016cfd,dangerous,hsu2013,minot \
       --database "$database"
-       echo "fin-3" 
+       echo "Scoring completed" 
 
   done
 done
