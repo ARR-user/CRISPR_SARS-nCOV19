@@ -5,7 +5,7 @@ chromosomes=("chr1" "chr2" )
 genomes=("HG00142" "HG00178" "HG00237" "HG01521" "HG03129" "NA19175" "NA19462")  
 
 # Create output folder 
-mkdir -p output
+mkdir -p output 
 
 # Loop through chromosomes and genome IDs
 for chr in "${chromosomes[@]}"; do
@@ -14,7 +14,7 @@ for chr in "${chromosomes[@]}"; do
     database="${chr}_${genome}_cas9ngg_database"
     reference="${chr}_genome/${genome}_${chr}.fasta"
 
-    # Step 1: Index
+    # Step 1: Index // ## run it twice for spcas9agg, spcas9ggg
     echo "Indexing for $chr and $genome..."
     java -Xmx4g -jar FlashFry-assembly-1.15.jar \
       index \
